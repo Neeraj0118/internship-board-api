@@ -1,0 +1,30 @@
+{
+  "name": "internship-board-api",
+  "version": "1.0.0",
+  "description": "REST API and Persistent Data Service for InternSphere Internship Board",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "migrate": "node src/database/migrate.js",
+    "seed": "node src/database/seed.js",
+    "seed:frontend": "node src/database/seed.js --dataset=frontend",
+    "seed:api": "node src/database/seed.js --dataset=api",
+    "test": "node tests/test-runner.js"
+  },
+  "keywords": [
+    "express",
+    "sqlite",
+    "rest-api",
+    "internship-board"
+  ],
+  "author": "Neeraj0118",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "morgan": "^1.10.0"
+  }
+}
